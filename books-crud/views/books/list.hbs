@@ -1,0 +1,17 @@
+<h1>Listado de libros</h1>
+
+<ul>
+    {{#each books}}
+    <li>{{title}}
+        [<a href="/libros/detalles/{{_id}}">ver</a>]
+        [<a href="/libros/editar?book_id={{_id}}">editar</a>]
+
+        <form action="/libros/eliminar/{{_id}}" method="POST" style="display: inline-block;">
+            <button>Eliminar</button>
+        </form>
+
+    </li>
+    {{/each}}
+</ul>
+
+<a href="/libros/crear">Crear nuevo libro (no trolling pls)</a>

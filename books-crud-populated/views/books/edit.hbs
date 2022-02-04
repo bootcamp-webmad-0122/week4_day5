@@ -1,0 +1,36 @@
+<h1>Editar {{title}}</h1>
+
+<form action="/libros/editar?book_id={{_id}}" method="POST">
+
+    <label>
+        Título
+        <input type="text" name="title" value="{{title}}">
+    </label>
+
+    <br><br>
+
+    <label>
+        Descripción
+        <input type="text" name="description" value="{{description}}">
+    </label>
+
+    <br><br>
+
+    <label>
+        Autor/a
+        <input type="text" name="author" value="{{author}}">
+    </label>
+
+    <br><br>
+
+    <label>
+        Puntuación
+        <input type="number" name="rating" value="{{rating}}">
+    </label>
+
+    <br><br>
+
+    <input type="submit" value="Guardar edición">
+</form>
+
+<a href="/libros/listado">Volver al listado</a>

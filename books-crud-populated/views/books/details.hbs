@@ -1,0 +1,16 @@
+<h1>Detalles de {{title}}</h1>
+
+<h3>Descripción</h3>
+<p>{{description}}</p>
+
+<h3>Puntuación</h3>
+<p>{{rating}} sobre 10</p>
+
+<h3>Autor/a</h3>
+{{#each author}}
+<img src="{{pictureUrl}}" alt="{{name}}" style="width: 300px">
+<p>{{name}} {{lastName}} ({{nationality}})</p>
+<hr>
+{{/each}}
+
+<a href="/libros/listado">Volver al listado</a>
